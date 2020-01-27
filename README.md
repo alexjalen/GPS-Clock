@@ -17,8 +17,6 @@ Meetup: https://www.meetup.com/nullspacelabs/
 
 # Library's
 
---TODO--
-
 * Wire.h 					Version: 
 
 * Adafruit_GFX.h 			Version: 1.7.4 		From: https://github.com/adafruit/Adafruit-GFX-Library
