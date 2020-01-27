@@ -19,23 +19,59 @@ Meetup: https://www.meetup.com/nullspacelabs/
 
 --TODO--
 
-What code libraries were used
+* Wire.h 					Version: 
+
+* Adafruit_GFX.h 			Version: 1.7.4 		From: https://github.com/adafruit/Adafruit-GFX-Library
+
+* RTClib.h					Version: 1.3.3		From: https://github.com/adafruit/RTClib
+
+* Adafruit_LEDBackpack.h 	Version: 1.1.6		From: https://github.com/adafruit/Adafruit_LED_Backpack
+
+* TinyGPS++.h				Version: 1.0.2		From: https://github.com/mikalhart/TinyGPSPlus
+
+* TimeLib.h					Version: 1.6.0 
+
+* Timezone.h 				Version: 1.2.4		From: https://github.com/JChristensen/Timezone
 
 # Parts List
 
 --TODO--
 
-Parts list
+* [ESP-32](https://www.amazon.com/gp/product/B0718T232Z/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
+
+* [GPS NEO_6M](https://www.amazon.com/gp/product/B07P8YMVNT/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1)
+
+* [Adafruit 1.2" 4-Digit 7-Segment Display](https://www.adafruit.com/product/1270)
+
+* [TinyRTC](https://www.amazon.com/DS1307-Precision-Compatible-Atomic-Market/dp/B00TMI1ZSC)
 
 # Pictures
 
---TODO--
+![Alt text](pics/GPS_Clock_img.jpg)
 
-some pictures of build
+# Discoveries
+
+* Delay function does not play nice with this program, use millis() instead.
+
+```
+delay(1000);
+```
+
+* gps encode inside the millis() section works great, it reads gps data for frequently, and accuratly.
+
+```
+unsigned long time_now = 0;
+time_now = millis();
+while(millis() < time_now + 1000){
+	//wait approx.  1 second = (1000ms)
+	char c = Serial2.read();
+	gps.encode(c);
+}
+```
 
 # Improvements
 
---TODO--
+* Addition of tp4056 with an 18650 battery and switch.
 
-Improvements, addition of tp4056 with 18650 battery and switch
+* Custom make a PCB to mount everything in a smaller form factor.
 
