@@ -1,5 +1,5 @@
 # GPS-Clock
-Using an ESP-32, TinyRTC, 7 segment display, and a gps module: Make a clock that sets itself.
+Using an ESP-32, TinyRTC, 7 segment display, and a GPS module: Make a clock that sets itself.
 
 Note: This code is no-way the most efficient/graceful. This is a personal project.
 
@@ -9,7 +9,7 @@ The clock was strictly used for time keeping purposes, no alarm function. To my 
 Jokingly, the new meetup group, Null Space Labs, I was beginning to become a member of at the time, and am still to this day, said I should make my own.
 And that's what I set out to do.
 
-If you are interestd in checking us them out, I highly recommend it.
+If you are interested in checking us them out, I highly recommend it.
 
 Website: https://032.la/
 
@@ -53,7 +53,7 @@ Meetup: https://www.meetup.com/nullspacelabs/
 delay(1000);
 ```
 
-* gps encode inside the millis() section works great, it reads gps data for frequently, and accuratly.
+* GPS encode inside the millis() section works great, it reads GPS data for frequently, and accurately.
 
 ```
 unsigned long time_now = 0;
@@ -70,4 +70,3 @@ while(millis() < time_now + 1000){
 * Addition of tp4056 with an 18650 battery and switch.
 
 * Custom make a PCB to mount everything in a smaller form factor.
-
