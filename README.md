@@ -17,7 +17,7 @@ Meetup: https://www.meetup.com/nullspacelabs/
 
 # Library's
 
-* Wire.h 					Version: 
+* Wire.h 
 
 * Adafruit_GFX.h 			Version: 1.7.4 		From: https://github.com/adafruit/Adafruit-GFX-Library
 
@@ -32,8 +32,6 @@ Meetup: https://www.meetup.com/nullspacelabs/
 * Timezone.h 				Version: 1.2.4		From: https://github.com/JChristensen/Timezone
 
 # Parts List
-
---TODO--
 
 * [ESP-32](https://www.amazon.com/gp/product/B0718T232Z/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
